@@ -7,5 +7,6 @@ def product_detail_view(request, *args, **kwargs):
     context = {
         'title': obj.title,
         'description': obj.description
+        #'product_list': Product.objects.
     }
-    return render(request, 'product/detail.html', context)
+    return render(request, 'products/detail.html', context)
