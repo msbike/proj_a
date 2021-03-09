@@ -7,7 +7,11 @@
     <p>{{ my_text }}, {{ my_number }}</p>
 <ul>
     {% for item in my_list %}
-        <li>{{ item }}</li>
+        {% if item == 'item1' %}
+    <li> <b>{{ forloop.counter }} - {{ item }}</b> </li>
+        {% else %}
+            <li> {{ forloop.counter }} - {{ item }} </li>
+        {% endif %}
     {% endfor %}
 </ul>
 {% endblock %}
