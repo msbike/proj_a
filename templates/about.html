@@ -8,7 +8,7 @@
 <ul>
     {% for item in my_list %}
         {% if item == 'item1' %}
-    <li> <b>{{ forloop.counter }} - {{ item }}</b> </li>
+    <li> <b>{{ forloop.counter }} - {{ item|title }}</b> </li>
         {% else %}
             <li> {{ forloop.counter }} - {{ item }} </li>
         {% endif %}
