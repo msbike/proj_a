@@ -5,8 +5,9 @@
     <title>Jens is doing try Django</title>
 </head>
 <body>
+ {% include 'navbar.html' %}
  <h1>
- {% block content %}
+ {% block content_header %}
     replace me
  {% endblock %}
  </h1>
