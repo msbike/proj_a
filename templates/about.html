@@ -3,3 +3,11 @@
 {% block content_header %}
     <p>About page</p>
 {% endblock %}
+{% block content_main %}
+    <p>{{ my_text }}, {{ my_number }}</p>
+<ul>
+    {% for item in my_list %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
